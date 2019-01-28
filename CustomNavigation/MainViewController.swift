@@ -41,7 +41,15 @@ class MainViewController: UIViewController {
     }()
     
     @objc func handleNewGame(){
-        print("Button tapped")
+        let gameController = GameViewController()
+        let navigationController = UINavigationController(rootViewController: gameController)
+        
+        
+        UIView.transition(with: self.view, duration: 0.5, options: UIView.AnimationOptions.transitionFlipFromLeft, animations: {
+            self.view.addSubview(navigationController.view)
+            self.addChild(navigationController)
+            navigationController.didMove(toParent: self)
+        }, completion: nil)
     }
     
     func configureView() {
