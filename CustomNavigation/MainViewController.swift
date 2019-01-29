@@ -11,7 +11,7 @@ import UIKit
 class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
+        view.backgroundColor = #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1)
         configureView()
     }
     
@@ -24,7 +24,7 @@ class MainViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         let descriptor = UIFontDescriptor().withFamily("Arial").withSymbolicTraits(.traitBold) ?? UIFontDescriptor().withFamily("Arial")
         label.font = UIFont(descriptor: descriptor, size: 40)
-        label.textColor = #colorLiteral(red: 0.521568656, green: 0.1098039225, blue: 0.05098039284, alpha: 1)
+        label.textColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         label.text = "CAPTCHA KING"
         return label
     }()
@@ -34,8 +34,8 @@ class MainViewController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.layer.cornerRadius = 5
         button.setTitle("New Game", for: UIControl.State.normal)
-        button.setTitleColor(#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), for: .normal)
-        button.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)
+        button.setTitleColor(#colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1), for: .normal)
+        button.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         button.addTarget(self, action: #selector(handleNewGame), for: .touchUpInside)
         return button
     }()

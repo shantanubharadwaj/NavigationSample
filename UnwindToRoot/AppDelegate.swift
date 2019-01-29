@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        configureNavBar()
+//        configureNavBar()
         window = UIWindow()
         let storyboard = UIStoryboard(name: "UnwindSegue", bundle: Bundle.main)
         let viewController = storyboard.instantiateInitialViewController()
@@ -49,7 +49,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private func configureNavBar() {
         UINavigationBar.appearance().tintColor           = .white
-        UINavigationBar.appearance().backgroundColor     = UIColor.darkGray
+        UINavigationBar.appearance().backgroundColor     = #colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1)
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
     }
 }
